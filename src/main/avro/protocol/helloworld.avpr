@@ -1,0 +1,37 @@
+{
+
+   "namespace": "protocol.dto",
+   "protocol": "HelloWorld",
+   "types": [
+      {
+         "name": "Request",
+         "type": "record",
+         "fields": [
+            { "name": "name", "type": [ "string", "null" ] }
+         ]
+      },
+      {
+        "name": "Status",
+        "type": "enum",
+        "symbols": [ "SYM1", "SYM2" ]
+      },
+      {
+         "name": "Response",
+         "type": "record",
+         "fields": [
+            { "name": "nameToReturn", "type": [ "string", "null" ] }
+         ]
+      }
+   ],
+   "messages": {
+      "send": {
+         "request": [
+            { "name": "request", "type": "Request" },
+            { "name": "age", "type": "long" },
+            { "name": "status", "type": "Status" }
+         ],
+         "response": "Response"
+      }
+   }
+
+}

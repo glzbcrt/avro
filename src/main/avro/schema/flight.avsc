@@ -1,0 +1,38 @@
+{
+
+   "namespace": "schema.dto",
+   "type": "record",
+   "name": "Flight",
+    "fields": [
+        { "name": "year",                "type":["int", "null"] },
+        { "name": "month",               "type":["int", "null"] },
+        { "name": "day_of_month",        "type":["int", "null"] },
+        { "name": "day_of_week",         "type":["int", "null"] },
+        { "name": "dep_time",            "type":["int", "null"] },
+        { "name": "crs_dep_time",        "type":["int", "null"] },
+        { "name": "arr_time",            "type":["int", "null"] },
+        { "name": "cs_arr_time",         "type":["int", "null"] },
+        { "name": "unique_carrier",      "type":["string", "null"] },
+        { "name": "flight_num",          "type":["int", "null"] },
+        { "name": "tail_num",            "type":["string", "null"] },
+        { "name": "actual_elapsed_time", "type":["int", "null"] },
+        { "name": "crs_elapsed_time",    "type":["int", "null"] },
+        { "name": "air_time",            "type":["string", "null"] },
+        { "name": "arr_delay",           "type":["string", "null"] },
+        { "name": "dep_delay",           "type":["string", "null"] },
+        { "name": "origin",              "type":["string", "null"] },
+        { "name": "dest",                "type":["string", "null"] },
+        { "name": "distance",            "type":["int", "null"] },
+        { "name": "taxi_in",             "type":["string", "null"] },
+        { "name": "taxi_out",            "type":["string", "null"] },
+        { "name": "cancelled",           "type":["int", "null"] },
+        { "name": "cancellation_code",   "type":["string", "null"] },
+        { "name": "diverted",            "type":["int", "null"] },
+        { "name": "carrier_delay",       "type":["string", "null"] },
+        { "name": "weather_delay",       "type":["string", "null"] },
+        { "name": "nas_delay",           "type":["string", "null"] },
+        { "name": "security_delay",      "type":["string", "null"] },
+        { "name": "late_aircraft_delay", "type":["string", "null"] }
+    ]
+
+}

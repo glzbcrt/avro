@@ -1,0 +1,38 @@
+[
+
+    {
+        "type": "enum",
+        "name": "MyEnum",
+        "namespace": "schema.dto",
+        "symbols": ["SYM1", "SYM2", "SYM3"]
+    },
+
+    {
+        "type": "fixed",
+        "name": "MyFixed",
+        "namespace": "schema.dto",
+        "size": 150
+    },
+
+    {
+        "type": "record",
+        "name": "MyRecord",
+        "namespace": "schema.dto",
+        "aliases": [ "MyAlias" ],
+        "fields": [
+            { "name": "MyLong",     "type": "long" },
+            { "name": "MyUnion",    "type": ["null", "string"] },
+            { "name": "MyFloat",    "type": "float" },
+            { "name": "MyDouble",   "type": "double" },
+            { "name": "MyInt",      "type": "int" },
+            { "name": "MyBoolean",  "type": "boolean" },
+            { "name": "MyString",   "type": "string" },
+            { "name": "MyArray",    "type": { "type": "array", "items": "string" } },
+            { "name": "MyEnum",     "type": "MyEnum" },
+            { "name": "MyMap",      "type": { "type": "map", "values": "string" } },
+            { "name": "MyFixed",    "type": "MyFixed" },
+            { "name": "MyBytes",    "type": "bytes" }
+        ]
+    }
+
+]
